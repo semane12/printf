@@ -72,42 +72,8 @@ int print_string(va_list types, char buffer[], int flags, int width, int precisi
 
 	return (write(1, str, length));
 }
-sion);
-UNUSED(size);
-if (str == NULL)
-{
-	str = "(null)";
-	if (precision >= 6)
-		str = "      ";
-}
 
-while (str[length] != '\0')
-length++;
-
-if (precision >= 0 && precision < length)
-	length = precision;
-	
-	if (width > length)
-{
-	if (flags & F_MINUS)
-	{
-		write(1, &str[0], length);
-		for (i = width - length; i > 0; i--)
-			write(1, " ", 1);
-		return (width)
-	}
-	else
-	{
-		for (i = width - length; i > 0; i--)
-			write(1, " ", 1);
-		write(1, &str[0], length);
-		return (width);
-	}
-}
-
-return (write(1, str, length));
-}
-/******************* PRINT PERCENT CHAR**********/
+/******************* PRINT PERCENT SIGN**********/
 /**
  * print_percent -prints a percent sign
  * @types: list a of arguments
@@ -129,121 +95,8 @@ int print_percent(va_list types, char buffer[], int flags, int width, int precis
 	return (write(1, "%%", 1));
 }
 
-/************************ PRINT INT ***************/sion);
-UNUSED(size);
-if (str == NULL)
-{
-	str = "(null)";
-	if (precision >= 6)
-		str = "      ";
-}
 
-while (str[length] != '\0')
-length++;
-
-if (precision >= 0 && precision < length)
-	length = precision;
-	
-	if (width > length)
-{
-	if (flags & F_MINUS)
-	{
-		write(1, &str[0], length);
-		for (i = width - length; i > 0; i--)
-			write(1, " ", 1);
-		return (width)
-	}
-	else
-	{
-		for (i = width - length; i > 0; i--)
-			write(1, " ", 1);
-		write(1, &str[0], length);
-		return (width);
-	}
-}
-
-return (write(1, str, length));
-}
-/******************* PRINT PERCENT CHAR**********/
-/**
- * print_percent -prints a percent sign
- * @types: list a of arguments
- * @buffer: buffer array array to handle print
- * @flags: calculates active flag
- * @width: get width
- * @precision: pprecision specification
- * @size: size specification
- * Return: number of chars printe
- */
-int print_percent(va_list types, char buffer[], int flags, int width, int precision, int size)
-{
-	UNUSED(types);
-	UNUSED(buffer);
-	UNUSED(flags);
-	UNUSED(width);
-	UNUSED(precision);
-	UNUSED(size);
-	return (write(1, "%%", 1));
-}
-
-/************************ PRINT INT ***************/sion);
-UNUSED(size);
-if (str == NULL)
-{
-	str = "(null)";
-	if (precision >= 6)
-		str = "      ";
-}
-
-while (str[length] != '\0')
-length++;
-
-if (precision >= 0 && precision < length)
-	length = precision;
-	
-	if (width > length)
-{
-	if (flags & F_MINUS)
-	{
-		write(1, &str[0], length);
-		for (i = width - length; i > 0; i--)
-			write(1, " ", 1);
-		return (width)
-	}
-	else
-	{
-		for (i = width - length; i > 0; i--)
-			write(1, " ", 1);
-		write(1, &str[0], length);
-		return (width);
-	}
-}
-
-return (write(1, str, length));
-}
-/***************** PRINT PERCENT SIGN**********/
-/**
- * print_percent -prints a percent sign
- * @types: list a of arguments
- * @buffer: buffer array array to handle print
- * @flags: calculates active flag
- * @width: get width
- * @precision: pprecision specification
- * @size: size specification
- * Return: number of chars printe
- */
-int print_percent(va_list types, char buffer[], int flags, int width, int precision, int size)
-{
-	UNUSED(types);
-	UNUSED(buffer);
-	UNUSED(flags);
-	UNUSED(width);
-	UNUSED(precision);
-	UNUSED(size);
-	return (write(1, "%%", 1));
-}
-
-/******************* PRINT PERCENT INT**********/
+/******************* PRINT  INT**********/
 /**
  * print_int -prints a percent sign
  * @types: list a of arguments
