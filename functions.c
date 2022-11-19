@@ -245,15 +245,15 @@ int print_percent(va_list types, char buffer[], int flags, int width, int precis
 
 /******************* PRINT PERCENT INT**********/
 /**
- * * print_percent -prints a percent sign
- * * @types: list a of arguments
- * * @buffer: buffer array array to handle print
- * * @flags: calculates active flag
- * * @width: get width
- * * @precision: pprecision specification
- * * @size: size specification
- * * Return: number of chars printe
- * */
+ * print_int -prints a percent sign
+ * @types: list a of arguments
+ * @buffer: buffer array array to handle print
+ * @flags: calculates active flag
+ * @width: get width
+ * @precision: pprecision specification
+ * @size: size specification
+ * Return: number of chars printe
+ */
 int print_int(va_list types, char buffer[], int flags, int width, int precision, int size)
 {
 	int i = BUFF_SIZE - 2;
@@ -288,15 +288,15 @@ int print_int(va_list types, char buffer[], int flags, int width, int precision,
 
 /******************* PRINT BINARY **********/
 /**
- * * print_percent -prints a percent sign
- * * @types: list a of arguments
- * * @buffer: buffer array array to handle print
- * * @flags: calculates active flag
- * * @width: get width
- * * @precision: pprecision specification
- * * @size: size specification
- * * Return: number of chars printe
- * */
+ * print_binary -prints a percent sign
+ * @types: list a of arguments
+ * @buffer: buffer array array to handle print
+ * @flags: calculates active flag
+ * @width: get width
+ * @precision: pprecision specification
+ * @size: size specification
+ * Return: number of chars printe
+ */
 int print_binary(va_list types, char buffer[], int flags, int width, int precision, int size)
 {
 	unsigned int n, m, i, sum;
