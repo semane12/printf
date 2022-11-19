@@ -36,7 +36,7 @@ int print_unsigned(va_list types, char buffer[],
 }
 /*******************PRINT UNSIGNED NUMBER IN OCTAL************/
 /**
- * print_unsigned - prints an ansigned number
+ * print_octal - prints an ansigned number
  * @types: list of argumnts
  * @buffer: buffer array to handle print
  * @flags: calculates active flag
@@ -45,7 +45,7 @@ int print_unsigned(va_list types, char buffer[],
  * @size: size specifier
  * Return: num of chars printed
  */
-int print_oclat(va_list types, char buffer[],
+int print_octal(va_list types, char buffer[],
 	int flags, int width, int precision, int size)
 {
 	int i = BUFF_SIZE - 2;
