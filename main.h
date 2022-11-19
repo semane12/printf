@@ -19,11 +19,11 @@
 #define S_SHORT 1
 
 /**
-* struct int - struct op
-*
-* @fmt: the format
-* @fn: the function associated
-*/
+ * struct fmt - struct op
+ *
+ * @fmt: the format
+ * @fn: the function associated
+ */
 struct fmt
 {
 	char fmt;
@@ -31,11 +31,11 @@ struct fmt
 }
 
 /**
-* typedef struct fmt fmt_t - struct op
-*
-* @fmt: the format
-* @fm_t: the function associated
-*/
+ * typedef struct fmt fmt_t - struct op
+ *
+ * @fmt: the format
+ * @fm_t: the function associated
+ */
 typedef struct fmt fmt_t;
 
 int _printf(const char *format, ...);
@@ -53,5 +53,17 @@ int print_int(va_list types, char buffer[], int flags,
 	int width, int precision, int size);
 int print_binary(va_list types, char buffer[], int flags,
 	int width, int precision, int size);
+
+/*********FUNCTION 1 ******************/
+int print_unsigned(va_list types, char buffer[],
+	int flags, int width, int precision, int size);
+int print_octal(va_list types, char buffer[],
+	int flags, int width, int precision, int size);
+int print_hexadecimal(va_list types, char buffer[],
+	int flags, int width, int precision, int size);
+int print_hexa_upper(va_list types, char buffer[],
+	int flags, int width, int precision, int size);
+int print_hexa(va_list types, char buffer[],
+	int flags, int width, int precision, int size);
 
 #endif
