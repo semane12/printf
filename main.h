@@ -54,7 +54,7 @@ int print_int(va_list types, char buffer[], int flags,
 int print_binary(va_list types, char buffer[], int flags,
 	int width, int precision, int size);
 
-/*********FUNCTION 1 ******************/
+/*********FUNCTIONS 1 ******************/
 int print_unsigned(va_list types, char buffer[],
 	int flags, int width, int precision, int size);
 int print_octal(va_list types, char buffer[],
@@ -64,6 +64,16 @@ int print_hexadecimal(va_list types, char buffer[],
 int print_hexa_upper(va_list types, char buffer[],
 	int flags, int width, int precision, int size);
 int print_hexa(va_list types, char buffer[],
+	int flags, int width, int precision, int size);
+
+/********************* FUNCTIONS 2 ****************/
+int print_pointer(va_list types, char buffer[],
+	int flags, int width, int precision, int size);
+int print_non_printable(va_list types, char buffer[],
+	int flags, int width, int precision, int size);
+int print_reverse(va_list types, char buffer[],
+	int flags, int width, int precision, int size);
+int print_rot13string(va_list types, char buffer[],
 	int flags, int width, int precision, int size);
 
 #endif
