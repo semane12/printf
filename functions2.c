@@ -63,10 +63,10 @@ int print_pointer(va_list types, char buffer[],
  * @size: size specifier
  * Return: num of chars printed
  */
-int print_non-printable(va_list types, char buffer[],
+int print_non_printable(va_list types, char buffer[],
 	int flags, int width, int precision, int size)
 {
-	int i = 0, offset= 0;
+	int i = 0, offset = 0;
 	char *str = va_arg(types, char *);
 
 	UNUSED(flags);
@@ -178,7 +178,7 @@ int print_rot13string(va_list types, char buffer[],
 		}
 		if (lin[j])
 		{
-			x= str[i];
+			x = str[i];
 			write(1, &x, 1);
 			count++;
 		}
