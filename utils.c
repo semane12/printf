@@ -1,4 +1,8 @@
 #include "main.h"
+#include <stdlib.h>
+#include <stdio.h>
+#include <stdarg.h>
+#include <unistd.h>
 
 /**
  * is_printable - evaluate if the char is printable

@@ -1,4 +1,8 @@
 #include "main.h"
+#include <stdlib.h>
+#include <stdio.h>
+#include <stdarg.h>
+#include <unistd.h>
 
 void print_buffer(char buffer[], int *buff_ind);
 

@@ -89,4 +89,19 @@ int is-digit(char c);
 long int convert_size_number(long int num, int size);
 long int convert_size_unsgnd(unsigned long int num, int size);
 
+/*********** write handlers *************/
+int handle_write_char(char c, char buffer[],
+	int flags, int width, int precision, int size);
+int write_number(int is_negative, int ind, char buffer[],
+	int flags, int width, int precision, int size);
+int write_num(int ind, char buffer[], int flags, int width, int prec,
+	int length, char padd, char extra_c);
+int write_unsgnd(int is_negative, int ind, char buffer[],
+	int flags, int width, int precision, int size);
+int write_pointer(char buffer[], int ind, int lengh, int width,
+	int flags, char padd, char extra_c, int padd_start);
+/*************************** handle print **********************/
+int handle_print(const char *fmt, int *ind, va_list list, char buffer[],
+	int flags, int width, int precision, int size);
+
 #endif
