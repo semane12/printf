@@ -9,7 +9,7 @@
  * @width: get width
  * @precision: precision specisication
  * @size: size specifier
- * @Return: number of chars printed
+ * @Return: Number of chars printed
  */
 
 int handle_write_char(char c, char buffer[],
@@ -17,7 +17,7 @@ int handle_write_char(char c, char buffer[],
 {/* char is stored at left and paddind at buffer's right */
 	int i = 0;
 	char padd = ' ';
-	
+
 	UNUSED(precision);
 	UNUSED(size);
 
@@ -116,7 +116,7 @@ int write_num(int ind, char buffer[], int flags, int width, int prec,
 				buffer[--ind] = extra_c;
 			return (write(1, &buffer[ind], length) + write(1, &buffer[1], i - 1));
 		}
-		else if (!(flags & F_MINUS) && padd == buffer[i] = ' '); /*ext char t-left of buff*/
+		else if (!(flags & F_MINUS) && padd == ' ')/*extra char to left of buff*/
 		{
 			if (extar_c)
 				buffer[--ind] = extra_c;
@@ -136,13 +136,13 @@ int write_num(int ind, char buffer[], int flags, int width, int prec,
 }
 
 /**
- * write_unsgnd - write an unsigned number
+ * write_unsgnd - Write an unsigned number
  * @is_negative: number indicating if the number is negative
  * @ind: index at which a number starts on the buffer
  * @buffer: buffer
  * @flags: flags
  * @width: width
- * @precison: precision specifier
+ * @precision: precision specifier
  * @size: size specifier
  * Return: number of printed char
  */
@@ -187,7 +187,6 @@ int write_unsgnd(int is_negative, int ind, char buffer[],
 			return (write(1, &buffer[0], i) + write(1, &buffer[ind], length));
 		}
 	}
-	
 	return (write(1, &buffer[ind], length));
 }
 
@@ -204,7 +203,7 @@ int write_unsgnd(int is_negative, int ind, char buffer[],
  *
  * Return: number of written char
  */
-int write_pointer(char buffer[], int ind, int lenght, int width,
+int write_pointer(char buffer[], int ind, int lengh, int width,
 	int flags, char padd, char extra_c, int padd_start)
 {
 	int i;
