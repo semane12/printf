@@ -84,8 +84,8 @@ int get_width(const char *format, int *i, va_list list);
 
 /***************** UTILS *************/
 int is_printable(char c);
-int append_hexa_code(char ascii-code, char buffer[], int i);
-int is-digit(char c);
+int append_hexa_code(char ascii_code, char buffer[], int i);
+int is_digit(char c);
 long int convert_size_number(long int num, int size);
 long int convert_size_unsgnd(unsigned long int num, int size);
 
