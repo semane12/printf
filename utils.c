@@ -23,7 +23,7 @@ int is_printable(char c)
  * @ascii_code: ASCII code
  * Return: always 3
  */
-int append_hexa_code(char ascii-code, char buffer[], int i)
+int append_hexa_code(char ascii_code, char buffer[], int i)
 {
 	char map_to[] = "0123456789ABCDEF";
 	/* The hexa format code always 2 digit long */
@@ -44,7 +44,7 @@ int append_hexa_code(char ascii-code, char buffer[], int i)
  *
  * Return: 1 if c is a digit, 0 otherwise
  */
-int is-digit(char c)
+int is_digit(char c)
 {
 	if (c >= '0' && c <= '9')
 		return (1);
