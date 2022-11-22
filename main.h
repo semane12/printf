@@ -76,11 +76,15 @@ int print_reverse(va_list types, char buffer[],
 int print_rot13string(va_list types, char buffer[],
 	int flags, int width, int precision, int size);
 
-/****************             **********/
+/****************  FLAGS ... width       **********/
 int get_flags(const char *format, int *i);
 int get_precision(const char *format, int *i, va_list list);
 int get_size(const char *format, int *i);
 int get_width(const char *format, int *i, va_list list);
+
+/*************************** handle print **********************/
+int handle_print(const char *fmt, int *ind, va_list list, char buffer[],
+	int flags, int width, int precision, int size);
 
 /***************** UTILS *************/
 int is_printable(char c);
@@ -100,8 +104,6 @@ int write_unsgnd(int is_negative, int ind, char buffer[],
 	int flags, int width, int precision, int size);
 int write_pointer(char buffer[], int ind, int lengh, int width,
 	int flags, char padd, char extra_c, int padd_start);
-/*************************** handle print **********************/
-int handle_print(const char *fmt, int *ind, va_list list, char buffer[],
-	int flags, int width, int precision, int size);
+
 
 #endif
